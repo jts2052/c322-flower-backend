@@ -1,0 +1,10 @@
+services:
+  ducks-database:
+    image: postgres:alpine
+    container_name: flower-shop
+    ports:
+      - "6001:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: flower_shop
